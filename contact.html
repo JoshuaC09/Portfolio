@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Me</title>
+  <style>
+     body {
+      background-color: #12635f; /* Set the background color of the whole page to #12635f */
+      
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #07130c;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    nav li a {
+      color: white;
+      text-decoration: none;
+      background-color: #2ecc71; /* Add green background color to navs */
+      padding: 10px 20px; /* Add padding to the navs */
+      border-radius: 5px; /* Add rounded corners to the navs */
+      /* Add hover effect */
+      transition: background-color 0.3s ease;
+    }
+    nav li a:hover {
+      color: #3498db; /* Change the color to your desired hover color */
+    }
+    .contact-form {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f1c40f;
+      border-radius: 5px;
+      color: #333;
+      text-align: center;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+    .contact-form input[type="submit"] {
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .success-message, .error-message {
+      display: none;
+      margin-top: 10px;
+    }
+    .success-message {
+      color: #2ecc71;
+    }
+    .error-message {
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resume.html">Resume/CV</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
+    </nav>
+    <h2>Get in touch</h2>
+    <p>You can contact me at <a href="joshuacanapi09@gmail.com">joshuacanapi09@gmail.com</a> or <a href="tel:+15555555555">+63 950 663 8048</a>.</p>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <form id="contactForm">
+        <!-- Form Title -->
+        <h3>Contact Form</h3>
+
+        <!-- Form Fields -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <input type="submit" value="Submit">
+      </form>
+      <div class="success-message" id="successMessage">Successfully Delivered.</div>
+      <div class="error-message" id="errorMessage">There seems to be a problem with the contact process.</div>
+    </div>
+  </header>
+
+  <script>
+    const contactForm = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage");
+    const errorMessage = document.getElementById("errorMessage");
+
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      // Code to handle form submission and display success or error messages.
+      // For this example, let's assume the form submission is successful.
+      // You can replace the following code with your backend integration.
+      successMessage.style.display = "block";
+      errorMessage.style.display = "none";
+    });
+  </script>
+</body>
+</html>

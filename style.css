@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.navigation li:last-child {
+  margin-right: 0;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.photo-name-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.photo-holder {
+  margin-right: 20px;
+}
+
+.name-caption {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-caption h2 {
+  margin: 0;
+  font-size: 50px;
+  color: white;
+}
+
+/* Style the h1 caption */
+.h1-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.h1-caption h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #333;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #3b0909;
+}
+
+/* Other Sections Styles */
+section {
+  padding: 40px;
+  background-color: black;
+}
+
+/* Responsive Styles (optional) */
+@media screen and (max-width: 768px) {
+  .landing h1 {
+    font-size: 2rem;
+  }
+
+  .landing p {
+    font-size: 1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Additional CSS */
+header {
+  background-image: url("background.jpg");
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+}
+
+/* Change the font color of nav links with animation */
+@keyframes changeFontColor {
+  0% { color: white; }
+  25% { color: red; }
+  50% { color: blue; }
+  75% { color: yellow; }
+  100% { color: green; }
+}
+
+header nav a:hover {
+  animation: changeFontColor 2s infinite; /* The animation will repeat indefinitely */
+}
+
+header {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* New CSS for the caption */
+.caption {
+  color: rgb(204, 211, 181);
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Style for the name within the caption */
+.name {
+  color: #FF0000; /* Change this to your desired color for "Joshua Canapi" */
+}
+

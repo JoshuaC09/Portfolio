@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume/CV</title>
+  <style>
+    /* Set the background image */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 150vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    header {
+      text-align: left;
+      max-width: 150%;
+      height: 150vh;
+      padding: 50px;
+      color: #78ddb6;
+    }
+
+    nav {
+      display: flex;
+      width: 35%;
+      height: 35px;
+      background-color: #12635f;
+      padding: 10px 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #81dddd;
+      font-weight: bold;
+    }
+
+    /* Change font color on hover */
+    nav a:hover {
+      color: #3b0426;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    /* Add new styles for the paragraphs */
+    header p {
+      font-size: 18px;
+      background-color: rgba(54, 59, 57, 0.932);
+      padding: 10px;
+      margin-top: 20px;
+      
+    }
+
+    /* Placeholder styles */
+    .cv-placeholder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 170vh; /* Set the width and height to make it a square */
+      height: 90vh;
+      margin: 900px auto 0; /* Add margin to push the photo down */
+      background-color: rgb(22, 3, 3);
+
+    }
+
+    .cv-placeholder img {
+      max-width: 130%;
+      max-height: 500%;
+      object-fit: contain; /* Maintain the aspect ratio without cropping */
+    }
+ /* Resume header styles */
+ .resume-header {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #39d68d;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #000;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <ul>
+        <li style="display: inline;"><a href="index.html">Home</a></li>
+        <li style="display: inline;"><a href="about.html">About Me</a></li>
+        <li style="display: inline;"><a href="skills.html">Skills</a></li>
+        <li style="display: inline;"><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <!-- Placeholder for your CV image -->
+    <div class="cv-placeholder">
+      <img src="CV.jpg" alt="CV Image">
+      <div class="resume-header">Resume</div>
+    </div>
+  </header>
+</body>
+</html>
